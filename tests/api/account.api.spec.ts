@@ -11,7 +11,6 @@ import { generateUser } from '../../lib/test-data';
 test.describe.serial('Account API — full lifecycle', () => {
   const user = generateUser();
   const client = { value: null as unknown as ApiClient };
-ApiClient
   test.beforeEach(({ request }) => {
     client.value = new ApiClient(request);
   });
